@@ -1,0 +1,150 @@
+@font-face {
+  font-family: SCOREBOARD;
+  src: url(SCOREBOARD.ttf);
+}
+
+#airplane-img {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  width: 10%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#openBox1,#openBox2,#openBox3,#openBox4,#openBox5,#openBox6,#openBox7,#openBox8,#openBox9,#bomb1,#bomb2,#bomb3,#bomb4,#bomb5,#bomb6,#bomb7,#bomb8,#bomb9,#num1,#num2,#num3,#num4,#num5,#num6,#num7,#num8,#num9 {
+  position: absolute;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9{
+  width: 3%;
+}
+
+#openBox1,#openBox2,#openBox3,#openBox4,#openBox5,#openBox6,#openBox7,#openBox8,#openBox9,#bomb1,#bomb2,#bomb3,#bomb4,#bomb5,#bomb6,#bomb7,#bomb8,#bomb9,#num1,#num2,#num3,#num4,#num5,#num6,#num7,#num8,#num9 {
+  width: 7%;
+  z-index: 5;
+}
+
+#box1:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover, #box7:hover, #box8:hover, #box9:hover {
+  width: 5%;
+}
+
+#gameover, #awesome-job, #help-txt, #top5-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+#help-txt, #top5-txt {
+  font-size: 2vw;
+  color: yellow;
+  background-color: grey;
+  width: 30vw;
+  height: 25vh;
+  text-align: center;
+  border-radius: 2%;
+}
+
+#help-close {
+  position: absolute;
+  bottom: 1%;
+  width: 5vw;
+  height: 3vh;
+  left: 50%;
+  font-size: 1vw;
+  transform: translate(-50%);
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 0.5vw;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+#title-animate {
+  position: absolute;
+  z-index: 2;
+  bottom: 1%;
+  margin: 0;
+  left: 1.5%;
+}
+
+#score {
+  font-family: SCOREBOARD;
+  font-size: 5vw;
+  position: absolute;
+  z-index: 2;
+  bottom: 7%;
+  left: 2%;
+}
+
+h1 {
+  color: yellow;
+
+}
+
+body {
+  width: 100%;
+  background-color: #6d6d6d;
+}
+
+#bg-container {
+  position: fixed;
+  margin: 0 0;
+  padding: 0 0;
+  width: 100%;
+  border: none;
+}
+
+#map-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
+
+.button {
+    position: relative;
+    bottom: 0;
+    border: 0;
+    left: 40vw;
+    margin-left: 10px;
+    line-height: 2.5;
+    font-size: 1vw;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 0.5vw;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.button:hover, #help-close:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.button:active, #help-close:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+#restart, #help {
+  width: 6.5%;
+}
