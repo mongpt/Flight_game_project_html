@@ -1,6 +1,7 @@
 // Heejin - top5 button, startgame > AJAX
 
 document.getElementById('top5').addEventListener("click", top5Clicked);
+document.getElementById("top5-list").innerHTML = "";   //added
 async function top5Clicked() {
   document.getElementById('top5-txt').style.visibility="visible";
 
