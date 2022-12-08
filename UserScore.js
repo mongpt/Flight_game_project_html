@@ -1,5 +1,30 @@
 // Heejin - top5 button, startgame > AJAX
 
+// Save to database function   - totalScore / username
+
+async function saveScore() {
+  const data = {
+    body: JSON.stringify({
+        username: username,
+        score: totalScore,
+    }),
+    method: 'POST',
+    headers: {
+          'Content-type': 'application/json',
+    },
+  }
+  // send the data
+  try {
+    const response = await fetch('http://127.0.0.1:5000/top5Players', data);  // Send data to server and receive a server response
+    if (!response.ok) throw new Error('Invalid input!');         // If an error occurs, an error message is thrown
+    const json = await response.json();                                 // convert the loaded text JSON to a JavaScript object / array
+    console.log('result', json);                                        // print the result to the console
+  } catch (e) {
+    console.log('error', e);
+  }
+}
+
+
 document.getElementById('top5').addEventListener("click", top5Clicked);
 document.getElementById("top5-list").innerHTML = "";   //added
 async function top5Clicked() {
