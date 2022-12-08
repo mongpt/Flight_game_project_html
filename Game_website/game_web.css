@@ -1,0 +1,247 @@
+.container {
+    width: 97%;
+    margin: auto;
+    background-image: url(./craftpaper.jpg);
+}
+
+html {
+    font-family: Lobster;
+}
+
+body {
+    margin-top: 1rem;
+}
+
+/* header and navbar */
+header {
+    display: flex;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 30px;
+    height: 3rem;
+}
+
+.navbar {
+    width: 100%;
+    overflow: auto;
+    font-size: 1.3rem;
+}  
+
+#logospace{
+    width: 40%;
+}
+
+#logo {
+    height: 2.5rem;
+    width: 5rem;
+    margin-left: 3rem;
+}
+
+h1 {
+    width: 60%;
+    margin: 0;
+    height: 2rem;
+    padding-left: 1rem;
+    font-size: 15pt;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    background-color: rgb(242, 219, 189);
+    padding: 0;
+    margin: 0;
+    align-items: center;
+} 
+
+li {
+    width: calc(100% / 3);
+}
+
+li a {
+    background-color: rgb(242, 219, 189);
+    color: rgba(0, 0, 0, 0.94);
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 2rem;
+}
+
+li a:hover {
+    background-color: #bcb4a0;
+    border-radius: 4px;
+}
+
+/* main - 1. home*/
+
+
+section {
+    padding-top: 75px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    width: 100%;
+    padding-left: 3rem;
+}
+
+#greetings{
+    text-align: center;
+}
+
+#homeImg {
+    width: 75%;
+    height: auto;
+}
+
+.hometext {
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.homebutton { 
+      background-color: rgb(242, 219, 189);
+      border: 2px solid #422800;
+      border-radius: 30px;
+      box-shadow: #422800 4px 4px 0 0;
+      color: #422800;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Lobster;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 0 18px;
+      line-height: 50px;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-74:hover {
+      background-color: #fff;
+    }
+    
+    .button-74:active {
+      box-shadow: #422800 2px 2px 0 0;
+      transform: translate(2px, 2px);
+    }
+    /* */
+    @media (min-width: 768px) {
+      .button-74 {
+        min-width: 120px;
+        padding: 0 25px;
+      }
+    }
+
+
+/* main - 2. tutorial*/
+
+#article_a {/* */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0)
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#tutorial_intro {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+#tutorial_main {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+article {
+    width: calc(100% / 3);
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin: 0.5rem;
+    flex-direction: column;
+    background-color: rgb(242, 219, 189);
+}
+
+figure {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    border: 1px;
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+}
+
+img {
+    border-radius: 0;
+    width: 80%;
+    height: auto;
+}
+
+figcaption {
+    padding: 0;
+}
+
+.itemImg{
+    height: 10rem;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+
+
+
+/* main - 3. contact */
+
+#contact {
+    margin: 8rem 0;
+}
+
+.contactinfo {
+    display: flex;
+}
+
+.contactP {
+    width: 40%;
+    text-align: left;
+    padding: 3rem;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 3rem;
+}
