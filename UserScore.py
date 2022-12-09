@@ -1,5 +1,5 @@
 # Heejin - top5/GET and newgamescore/POST
-
+import requests
 from flask import Flask, request
 from flask_cors import CORS
 import json
@@ -14,7 +14,7 @@ connection = mysql.connector.connect(
          port= 3306,
          database='flight_game',
          user='root',
-         password='bori', #change
+         password='root', #change
          autocommit=True
 )
 
@@ -29,16 +29,27 @@ def top5Players():
 
     if request.method == 'POST':
         data = request.get_json()
-        print(data['username'], data['score'])
-
         sql = f"INSERT INTO users (name, points) VALUES (\"{data['username']}\",  \"{data['score']}\");"
         cursor = connection.cursor()
         cursor.execute( sql )
         result = cursor.fetchall()
-        cursor.close()
-        connection.commit()
         return json.dumps(result)
 
+@app.route('/resetDefault')
+def resetPlayerPoints():
+    myCursor = connection.cursor()
+    myCursor.execute("drop table if exists users;")
+    myCursor.execute("create table users(name varchar(10),points float);")
+    myCursor.execute("insert into users(name, points)values('A', 5),"
+                     "('B', 4),('C', 3),('D', 2),('E', 1);")
+    return None
+
+
+@app.route('/<cityId>')
+def weather(cityId):
+    complete_api_link = f"https://api.openweathermap.org/data/2.5/weather?id={cityId}&appid=b318472dc4571e2480bc555a091e5bb6"
+    api_link = requests.get(complete_api_link).json()
+    return json.dumps(api_link)
 
 if __name__ == '__main__':
     app.run(use_reloader=True, host='127.0.0.1', port=5000)
