@@ -1,0 +1,317 @@
+@font-face {
+  font-family: gunplay-3d;
+  src: url("gunplay-3d.ttf");
+}
+@font-face {
+ font-family: Lobster;
+ src: url(Lobster-Regular.ttf);
+}
+
+h1 {
+  color: #7d2e2e;
+}
+
+body {
+  width: 100%;
+  background-image: url("game-bg.jpg");
+  font-family: Ubuntu;
+}
+
+/* navbar */
+
+.navbar {
+  font-family: Lobster;
+  display: flex;
+  padding: 1vw;
+  position: absolute;
+  top: -0.5vw;
+  left: 4vw;
+  width: 100%;
+  overflow: auto;
+  font-size: 1.5vw;
+}
+
+a {
+  margin-left: 0 10vw;
+}
+
+#logospace {
+  width: 30vw;
+}
+
+#logo {
+  height: 2.5vw;
+  width: 5vw;
+  margin-left: 3vw;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  background-color: rgb(242, 219, 189);
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  width: 90%;
+}
+
+li {
+  width: calc(100% / 4);
+}
+
+li a {
+  background-color: rgb(242, 219, 189);
+  color: rgba(0, 0, 0, 0.94);
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 2vw;
+}
+
+li a:hover {
+  color: white;
+}
+
+#airplane-img {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  width: 10%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9, #openBox1, #openBox2, #openBox3, #openBox4, #openBox5, #openBox6, #openBox7, #openBox8, #openBox9, #bomb1, #bomb2, #bomb3, #bomb4, #bomb5, #bomb6, #bomb7, #bomb8, #bomb9, #point1, #point2, #point3, #point4, #point5, #point6, #point7, #point8, #point9 {
+  position: absolute;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9 {
+  width: 3%;
+}
+
+#wp1, #wp2, #wp3, #wp4, #wp5, #wp6, #wp7, #wp8, #wp9 {
+  position: absolute;
+  width: 8vw;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 60%;
+}
+
+#openBox1, #openBox2, #openBox3, #openBox4, #openBox5, #openBox6, #openBox7, #openBox8, #openBox9, #bomb1, #bomb2, #bomb3, #bomb4, #bomb5, #bomb6, #bomb7, #bomb8, #bomb9 {
+  width: 7%;
+  z-index: 5;
+}
+
+#point1, #point2, #point3, #point4, #point5, #point6, #point7, #point8, #point9 {
+  font-family: gunplay-3d;
+  font-size: 5vw;
+}
+
+#username-entry, #table, #reset-confirm, #gameover, #congrats {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  filter: drop-shadow(0 0 0.5vh black);
+  width: 70%;
+}
+
+#gif-title {
+  position: absolute;
+  z-index: 2;
+  bottom: 1%;
+  margin: 0;
+  left: 1.5%;
+  width: 25%;
+}
+
+#pName {
+  font-family: gunplay-3d;
+  font-size: 2vw;
+  position: absolute;
+  z-index: 2;
+  bottom: 25%;
+  left: 5%;
+  filter: drop-shadow(0 0 0.7vh #7d2e2e);
+  color: #d1dbdd;
+}
+
+#score {
+  font-family: gunplay-3d;
+  font-size: 5vw;
+  position: absolute;
+  z-index: 2;
+  bottom: 7%;
+  left: 2%;
+  filter: drop-shadow(0 0 0.7vh #7d2e2e);
+  color: #d1dbdd;
+}
+
+#bg-container {
+  position: fixed;
+  margin: 0 0;
+  padding: 0 0;
+  width: 100%;
+  border: none;
+}
+
+#map-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
+
+.button {
+  position: relative;
+  font-family: Ubuntu;
+  bottom: 0;
+  border: 0;
+  left: 40vw;
+  margin-left: 1vw;
+  line-height: 2.5;
+  font-size: 1vw;
+  text-align: center;
+  font-weight: bold;
+  color: #7d2e2e;
+  border-radius: 0.5vw;
+  background-color: #d1dbdd;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.button:hover {
+  background-color: #bb6b0a;
+  color: #d1dbdd;
+}
+
+.button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+    inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+#restart {
+  width: 6.5%;
+}
+
+/*Heejin - username-entry, top5-txt, top5-close, startgame */
+#username-entry, #reset-confirm {
+  font-size: 2vw;
+  color: #7d2e2e;
+  background-image: url("game-bg.jpg");
+  width: 25vw;
+  height: 25%;
+  text-align: center;
+  border-radius: 2%;
+}
+
+#table {
+  background-image: url("game-bg.jpg");
+  width: 30vw;
+  border-radius: 2%;
+}
+
+#top5-btn, #name-btn, #reset-yes, #reset-no {
+  position: absolute;
+  width: 5vw;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#top5-btn {
+  margin: 0;
+}
+
+#name-btn {
+  margin: 0 0 5% 0;
+}
+
+#username {
+  margin-top: 5%;
+}
+/* Try new table */
+table {
+  border-spacing: 1px;
+  border-color: #7d2e2e;
+  border-collapse: separate;
+  border-radius: 2%;
+  width: 30vw;
+}
+
+.top5Table {
+  background-image: url('game-bg.jpg');
+}
+
+td, th {
+  padding-left: 8px;
+  text-align: center;
+  outline: 1px solid #d1dbdd;
+  color: #7d2e2e;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#top5-title {
+  text-align: center;
+  margin: 0;
+  padding: 5%;
+  color: #7d2e2e;
+  font-family: gunplay-3d;
+}
+
+thead tr {
+  height: 60px;
+  background: #d1dbdd;
+  font-size: 1.5rem;
+}
+
+thead th {
+  color: #7d2e2e;
+  font-family: gunplay-3d;
+  outline: 1px solid #7d2e2e;
+}
+
+tbody tr {
+  height: 48px;
+}
+
+form {
+  margin-top: 10%;
+}
+
+.stop-img {
+  width: 15%;
+  margin: 1vw 0 0 0.8vw;
+}
+
+#reset-confirm {
+  width: 30%;
+  font-size: 1.5vw;
+}
+
+#reset-yes {
+  margin: 0 0 5% -15%;
+}
+
+#reset-no {
+  margin: 0 0 5% 18%;
+}
+
+#show9,#show1,#show2,#show3,#show4,#show5,#show6,#show7,#show8  {
+  position: absolute;
+  z-index: 4;
+  width: 8vw;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.7vw;
+}

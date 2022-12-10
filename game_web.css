@@ -1,0 +1,215 @@
+@font-face {
+  font-family: Lobster;
+  src: url(Lobster-Regular.ttf);
+}
+
+body {
+  background-image: url("game-bg.jpg");
+  font-family: Lobster;
+  position: fixed;
+  margin: 0 0;
+  padding: 0 0;
+  width: 100%;
+  border: none;
+}
+
+/* navbar */
+
+.navbar {
+  font-family: Lobster;
+  display: flex;
+  padding: 1vw;
+  position: absolute;
+  top: 0;
+  left: 4vw;
+  width: 100%;
+  overflow: auto;
+  font-size: 1.5vw;
+}
+
+a {
+  margin-left: 0 10vw;
+}
+
+#logospace {
+  width: 30vw;
+}
+
+#logo {
+  height: 2.5vw;
+  width: 5vw;
+  margin-left: 3vw;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  background-color: rgb(242, 219, 189);
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  width: 90%;
+}
+
+li {
+  width: calc(100% / 4);
+}
+
+li a {
+  background-color: rgb(242, 219, 189);
+  color: rgba(0, 0, 0, 0.94);
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 2vw;
+}
+
+li a:hover {
+  color: white;
+}
+
+/* main */
+section {
+  padding-top: 15px;
+}
+
+h2 {
+  width: auto;
+  padding: 0 3vw;
+  margin-top: 1vw;
+  font-size: 3vw;
+}
+
+/* main - 1. home */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10vw;
+}
+
+#greetings {
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 5vw;
+}
+
+#contact {
+  padding-top: 10vw;
+}
+
+img {
+  border-radius: 0;
+  width: 80%;
+  height: auto;
+}
+
+#poster {
+width: 40vw;
+}
+
+/* main - 3. tutorial*/
+#article_a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0)
+}
+
+#tutorial_intro {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 2vw;
+}
+
+#hometext {
+  align-items: center;
+  text-align: center;
+  font-size: 1.5vw;
+  width: 80%;
+}
+
+#tutorial_main {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-bottom: 10vw;
+}
+
+#tutorial h2 {
+  margin-top: 8vw;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+article {
+  width: calc(100% / 4);
+  padding: 0.5vw;
+  box-sizing: border-box;
+  margin: 0.5vw;
+  flex-direction: column;
+  background-color: rgb(242, 219, 189);
+}
+
+figure {
+  float: left;
+  margin: 0 1vw 1vw 0;
+  border: 1px;
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+}
+
+.itemImg {
+  height: 10vw;
+  width: auto;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#item4Img {
+  width: 5vw;
+  height: 7vw;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+/* main - 4. contact */
+#contact {
+  margin-top: 0%;
+}
+
+.contactinfo {
+  display: flex;
+}
+
+.contactP {
+  width: 30%;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 3vw;
+  padding-top: 0;
+}

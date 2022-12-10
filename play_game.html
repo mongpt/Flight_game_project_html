@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treasure Hunt</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="bg-container">
+    <div class='navbar'>
+      <ul>
+        <a id="logospace"><img src="./airplane.png" id="logo" alt="Treasure"></a>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="play_game.html">Play Game</a></li>
+        <li><a href="tutorial.html">Tutorial</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <img id="map-img" src="WorldMap.png" alt="">
+    <h2 id="pName"></h2>
+    <h1 id="score">$$$: 0</h1>
+    <img id="gif-title" src="gif-title.gif" alt="">
+    <img src="airplane.png" id="airplane-img" alt="">
+
+    <img class="box" src="treasureBox.png" id="box1" alt="">
+    <img class="box" src="treasureBox.png" id="box2" alt="">
+    <img class="box" src="treasureBox.png" id="box3" alt="">
+    <img class="box" src="treasureBox.png" id="box4" alt="">
+    <img class="box" src="treasureBox.png" id="box5" alt="">
+    <img class="box" src="treasureBox.png" id="box6" alt="">
+    <img class="box" src="treasureBox.png" id="box7" alt="">
+    <img class="box" src="treasureBox.png" id="box8" alt="">
+    <img class="box" src="treasureBox.png" id="box9" alt="">
+    <img src="treasure.gif" id="openBox1" alt="">
+    <img src="treasure.gif" id="openBox2" alt="">
+    <img src="treasure.gif" id="openBox3" alt="">
+    <img src="treasure.gif" id="openBox4" alt="">
+    <img src="treasure.gif" id="openBox5" alt="">
+    <img src="treasure.gif" id="openBox6" alt="">
+    <img src="treasure.gif" id="openBox7" alt="">
+    <img src="treasure.gif" id="openBox8" alt="">
+    <img src="treasure.gif" id="openBox9" alt="">
+    <img src="explosion.gif" id="bomb1" alt="">
+    <img src="explosion.gif" id="bomb2" alt="">
+    <img src="explosion.gif" id="bomb3" alt="">
+    <img src="explosion.gif" id="bomb4" alt="">
+    <img src="explosion.gif" id="bomb5" alt="">
+    <img src="explosion.gif" id="bomb6" alt="">
+    <img src="explosion.gif" id="bomb7" alt="">
+    <img src="explosion.gif" id="bomb8" alt="">
+    <img src="explosion.gif" id="bomb9" alt="">
+
+    <h1 id='point1'></h1>
+    <h1 id='point2'></h1>
+    <h1 id='point3'></h1>
+    <h1 id='point4'></h1>
+    <h1 id='point5'></h1>
+    <h1 id='point6'></h1>
+    <h1 id='point7'></h1>
+    <h1 id='point8'></h1>
+    <h1 id='point9'></h1>
+    <img src="GAME-OVER.gif" id="gameover" alt="" style="visibility: hidden;">
+    <img src="CONGRATS.gif" id="congrats" alt="" style="visibility: hidden;">
+
+    <img src="wPoint.png" id="wp1" alt="">
+    <img src="wPoint.png" id="wp2" alt="">
+    <img src="wPoint.png" id="wp3" alt="">
+    <img src="wPoint.png" id="wp4" alt="">
+    <img src="wPoint.png" id="wp5" alt="">
+    <img src="wPoint.png" id="wp6" alt="">
+    <img src="wPoint.png" id="wp7" alt="">
+    <img src="wPoint.png" id="wp8" alt="">
+    <img src="wPoint.png" id="wp9" alt="">
+
+    <div class="bnt">
+      <button class="button" id="restart" type="button" name="restart">Restart</button>
+      <button class="button" id="top5" type="button" name="top5">Top 5 Players</button>
+      <button class="button" id="reset" type="button" name="reset">Reset Score</button>
+    </div>
+
+    <!--Heejin: top5-txt and username-entry-->
+
+    <div id="table" style="visibility: hidden;">
+      <!-- Try table -->
+      <table class="top5Table">
+        <thead>
+          <h1 id="top5-title">
+            Top 5 Players
+          </h1>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody id="tBody">
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+        </tbody>
+        <button class="button" id="top5-btn" type="button" name="top5-btn">OK</button>
+      </table>
+    </div>
+    <!-- Create input form to get player's name -->
+    <div id="username-entry">
+      <form>
+        <label for="username">Enter your name:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <button class="button" id="name-btn" type="submit" name="name-btn">OK</button>
+      </form>
+    </div>
+
+    <!-- Confirm box to reset default data -->
+    <div id="reset-confirm" style="visibility: hidden;">
+      <img class="stop-img" src="stop.png" alt="">Are you sure to reset user data?
+      <button class="button" id="reset-yes" type="button" name="reset-yes">YES</button>
+      <button class="button" id="reset-no" type="button" name="reset-no">NO</button>
+    </div>
+
+    <!-- space for weather info -->
+    <div id="show9"></div>
+    <div id="show1"></div>
+    <div id="show2"></div>
+    <div id="show3"></div>
+    <div id="show4"></div>
+    <div id="show5"></div>
+    <div id="show6"></div>
+    <div id="show7"></div>
+    <div id="show8"></div>
+
+    <script src="script.js" char="utf-8"></script>
+</body>
+
+</html>
