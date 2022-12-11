@@ -76,7 +76,7 @@ for (let x in initPosBox) {
   document.getElementById('openBox' + boxNum).style = "left:" + x * 100 + "%; top:" + initPosBox[x] * 100 + "%; visibility: hidden;"
   document.getElementById('bomb' + boxNum).style = "left:" + x * 100 + "%; top:" + initPosBox[x] * 100 + "%; visibility: hidden;"
   document.getElementById('point' + boxNum).style = "left:" + x * 100 + "%; top:" + initPosNum[x] * 100 + "%; visibility: hidden;"
-  document.getElementById('point' + boxNum).innerHTML = '+' + boxTypeList[boxNum - 1];
+  document.getElementById('point' + boxNum).innerHTML = '$' + boxTypeList[boxNum - 1];
   boxNum++;
 
   // Creating a map for xBoxSize and yBoxSize
