@@ -51,7 +51,11 @@ var treasureSound = new Audio("Sounds/OpenBox.mp3");
 //Generate box type: treasure or bomb
 var boxTypeList = [];
 for (let i = 1; i < 10; i++) {
+  var rand = Math.floor(Math.random() * 110) + 1
   boxTypeList.push(Math.floor(Math.random() * 110) + 1);
+  if (rand > 99) {
+    document.querySelector('li a').style.color="red";
+  }
 }
 console.log(boxTypeList)
 var curPlaneLeft = 100; // initial value of airplane position to the left (100px)
