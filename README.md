@@ -18,7 +18,7 @@
 <img src="rm/rm_gameover.png">
 
 ### &emsp; 4.3. Top 5 players
-<img src="rm/rm_gameOK.png">
+<img src="rm/rm_top5.png">
 
 ### &emsp; 4.4. Reset default
-<img src="rm/rm_gameover.png">
+<img src="rm/rm_reset.png">
