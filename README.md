@@ -1,4 +1,5 @@
 # Flight Game Project - Group 4
+## <a href="https://mongpt.github.io/Flight_game_project_html/home.html">Play Game</a>
 ## 1. Home page
 <img src="rm/rm_home.png">
 
