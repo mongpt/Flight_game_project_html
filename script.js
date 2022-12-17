@@ -52,7 +52,7 @@ var treasureSound = new Audio("Sounds/OpenBox.mp3");
 var boxTypeList = [];
 for (let i = 1; i < 10; i++) {
   var rand = Math.floor(Math.random() * 110) + 1
-  boxTypeList.push(Math.floor(Math.random() * 110) + 1);
+  boxTypeList.push(rand);
   if (rand > 99) {
     document.querySelector('li a').style.color="red";
   }
