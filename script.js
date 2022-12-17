@@ -259,12 +259,13 @@ async function top5Clicked() {
     }
     //Insert new data
     for (let x = 0; x < 5; x++) {
-      console.log(jsonData[x])
+      var tmp = x+1;
+      //console.log(jsonData[x])
       var tRow = tBody.insertRow(x);
       var cell1 = tRow.insertCell(0);
       var cell2 = tRow.insertCell(1);
       var cell3 = tRow.insertCell(2);
-      cell1.innerHTML = x+1;
+      cell1.innerHTML = tmp;
       cell2.innerHTML = `${jsonData[x][0]}`;
       cell3.innerHTML = `${jsonData[x][1]}`;
     }
