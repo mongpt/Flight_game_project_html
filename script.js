@@ -264,7 +264,7 @@ async function top5Clicked() {
       var cell1 = tRow.insertCell(0);
       var cell2 = tRow.insertCell(1);
       var cell3 = tRow.insertCell(2);
-      cell1.innerHTML = `${jsonData[x][2]}`;
+      cell1.innerHTML = x+1;
       cell2.innerHTML = `${jsonData[x][0]}`;
       cell3.innerHTML = `${jsonData[x][1]}`;
     }
