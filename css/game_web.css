@@ -1,10 +1,10 @@
 @font-face {
   font-family: Lobster;
-  src: url(Lobster-Regular.ttf);
+  src: url(../font/Lobster-Regular.ttf);
 }
 
 body {
-  background-image: url("game-bg.jpg");
+  background-image: url('../img/game-bg.jpg');
   font-family: Lobster;
   position: fixed;
   margin: 0 0;

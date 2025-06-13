@@ -52,7 +52,7 @@ var treasureSound = new Audio("Sounds/OpenBox.mp3");
 var boxTypeList = [];
 for (let i = 1; i < 10; i++) {
   var rand = Math.floor(Math.random() * 110) + 1
-  boxTypeList.push(rand);
+  boxTypeList.push(Math.floor(Math.random() * 110) + 1);
   if (rand > 99) {
     document.querySelector('li a').style.color="red";
   }
@@ -217,7 +217,7 @@ async function sendScore() {
   }
   // send the data
   try {
-    const response = await fetch('https://mongpt.pythonanywhere.com/top5Players', data); // Send data to server and receive a server response
+    const response = await fetch('http://127.0.0.1:5000/top5Players', data); // Send data to server and receive a server response
     if (!response.ok) throw new Error('Invalid input!'); // If an error occurs, an error message is thrown
     const json = await response.json(); // convert the loaded text JSON to a JavaScript object / array
     console.log('result', json); // print the result to the console
@@ -229,7 +229,7 @@ async function sendScore() {
 //function responses the restart button clicked (reload page)
 async function resetYes() {
   clickSound.play();
-  const response = await fetch('https://mongpt.pythonanywhere.com/resetDefault'); // Send data to server and receive a server response
+  const response = await fetch('http://127.0.0.1:5000/resetDefault'); // Send data to server and receive a server response
 
   resetNo();
 }
@@ -249,7 +249,7 @@ async function top5Clicked() {
   document.getElementById('table').style.visibility = "visible";
   console.log('asynchronous download begins');
   try {
-    const response = await fetch('https://mongpt.pythonanywhere.com/top5Players');
+    const response = await fetch('http://127.0.0.1:5000/top5Players');
     const jsonData = await response.json();
     //console.log(jsonData);
     var tBody = document.getElementById('tBody');
@@ -259,13 +259,12 @@ async function top5Clicked() {
     }
     //Insert new data
     for (let x = 0; x < 5; x++) {
-      var tmp = x+1;
-      //console.log(jsonData[x])
+      console.log(jsonData[x])
       var tRow = tBody.insertRow(x);
       var cell1 = tRow.insertCell(0);
       var cell2 = tRow.insertCell(1);
       var cell3 = tRow.insertCell(2);
-      cell1.innerHTML = tmp;
+      cell1.innerHTML = `${jsonData[x][2]}`;
       cell2.innerHTML = `${jsonData[x][0]}`;
       cell3.innerHTML = `${jsonData[x][1]}`;
     }
@@ -315,7 +314,7 @@ var cityId = [
 //function to fetch data from API
 async function getData(cityId) {
   try {
-    var response = await fetch('https://mongpt.pythonanywhere.com/' + cityId);
+    var response = await fetch('http://127.0.0.1:5000/' + cityId);
     var data = await response.json();
     return data
   } catch (error) {

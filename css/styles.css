@@ -1,10 +1,10 @@
 @font-face {
   font-family: gunplay-3d;
-  src: url("gunplay-3d.ttf");
+  src: url("../font/gunplay-3d.ttf");
 }
 @font-face {
  font-family: Lobster;
- src: url(Lobster-Regular.ttf);
+ src: url(../font/Lobster-Regular.ttf);
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 
 body {
   width: 100%;
-  background-image: url("game-bg.jpg");
+  background-image: url('../img/game-bg.jpg');
   font-family: Ubuntu;
 }
 
@@ -207,7 +207,7 @@ li a:hover {
 #username-entry, #reset-confirm {
   font-size: 2vw;
   color: #7d2e2e;
-  background-image: url("game-bg.jpg");
+  background-image: url('../img/game-bg.jpg');
   width: 25vw;
   height: 25%;
   text-align: center;
@@ -215,7 +215,7 @@ li a:hover {
 }
 
 #table {
-  background-image: url("game-bg.jpg");
+  background-image: url('../img/game-bg.jpg');
   width: 30vw;
   border-radius: 2%;
 }
@@ -248,7 +248,7 @@ table {
 }
 
 .top5Table {
-  background-image: url('game-bg.jpg');
+  background-image: url('../img/game-bg.jpg');
 }
 
 td, th {
