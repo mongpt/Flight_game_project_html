@@ -1,5 +1,6 @@
 # Flight Game Project - Group 4
-## <a href="https://users.metropolia.fi/~mongp/Flight_game_project/play_game.html">Play Game</a>
+A fun game developed using HTML, CSS, and JavaScript. This first-year student project was designed to help students apply their HTML, CSS, and JavaScript skills to a simple real-world application.
+
 ## 1. Home page
 <img src="rm/rm_home.png">
 
