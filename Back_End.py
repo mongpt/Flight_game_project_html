@@ -1,4 +1,4 @@
-'''
+# For local server
 # Heejin - top5/GET and newgamescore/POST
 import requests
 from flask import Flask, request
@@ -110,3 +110,4 @@ def weather(cityId):
     complete_api_link = f"https://api.openweathermap.org/data/2.5/weather?id={cityId}&appid=b318472dc4571e2480bc555a091e5bb6"
     api_link = requests.get(complete_api_link).json()
     return json.dumps(api_link)
+'''
